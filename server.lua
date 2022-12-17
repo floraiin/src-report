@@ -11,12 +11,12 @@
             ["title"] = name.." Sent Report",
             ["description"] = "REPORTED ID: **"..data.id.."**\nMessage: **"..data.message.."**",
 	        ["footer"] = {
-                ["text"] = Shared.communityname,
-                ["icon_url"] = Shared.communtiylogo,
+                ["text"] = Config.communityname,
+                ["icon_url"] = Config.communtiylogo,
             },
         }
     }
 
-PerformHttpRequest(Shared.logs, function(err, text, headers) end, 'POST', json.encode({username = Shared.communityname, embeds = connect}), { ['Content-Type'] = 'application/json' })
+PerformHttpRequest(Config.logs, function(err, text, headers) end, 'POST', json.encode({username = Config.communityname, embeds = connect}), { ['Content-Type'] = 'application/json' })
 
    end)
