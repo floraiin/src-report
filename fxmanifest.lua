@@ -3,7 +3,7 @@ games { 'gta5' }
 
 client_script "client.lua"
 
-server_script  {
+server_scripts  {
  "server.lua",
  "config.lua"
 }
@@ -23,4 +23,5 @@ files {
 	"html/fontawesome/css/*.css",
 	'html/img/index.html',
 	'html/img/*.jpg',
-    'html/img/*.png'}
+    'html/img/*.png'
+}
